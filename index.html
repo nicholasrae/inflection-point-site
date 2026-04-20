@@ -45,6 +45,13 @@
     .hero-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--purple); display: block; }
     .hero-stat-label { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ash); margin-top: 4px; }
     .stat-divider { width: 1px; background: var(--steel); align-self: stretch; }
+    .screens { background: var(--obsidian); }
+    .screens-header { margin-bottom: 44px; }
+    .screens-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+    .screen-card { background: var(--graphite); border: 1px solid var(--steel); border-radius: 22px; padding: 18px; }
+    .screen-shot { width: 100%; display: block; border-radius: 18px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 12px 32px rgba(0,0,0,0.35); }
+    .screen-title { font-size: 1rem; font-weight: 700; color: var(--white); margin-top: 16px; margin-bottom: 6px; }
+    .screen-desc { font-size: 0.88rem; color: var(--ash); line-height: 1.6; }
     section { padding: 100px 24px; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
     .section-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--purple); margin-bottom: 14px; }
@@ -149,6 +156,33 @@
     <div class="hero-stat">
       <span class="hero-stat-num">No</span>
       <span class="hero-stat-label">Subscription</span>
+    </div>
+  </div>
+</section>
+
+<section class="screens">
+  <div class="section-inner">
+    <div class="screens-header">
+      <div class="section-label">Inside the app</div>
+      <h2 class="section-title">See what it actually feels like</h2>
+      <p class="section-desc">Not mockups. Real screens from the app: the opening hook, the daily dashboard, and the identity builder.</p>
+    </div>
+    <div class="screens-grid">
+      <div class="screen-card">
+        <img class="screen-shot" src="images/ip-hook-screen.png" alt="Inflection Point opening prompt asking if you will be proud of who you became in 5 years" />
+        <div class="screen-title">The reset</div>
+        <p class="screen-desc">The app opens with the question it keeps bringing you back to: who are you becoming if nothing changes?</p>
+      </div>
+      <div class="screen-card">
+        <img class="screen-shot" src="images/ip-dashboard-screen.png" alt="Inflection Point dashboard showing quests, alignment, streaks, and vector state" />
+        <div class="screen-title">Daily dashboard</div>
+        <p class="screen-desc">Your quests, alignment, streaks, and vector state in one place, so you can tell if you are moving forward or drifting.</p>
+      </div>
+      <div class="screen-card">
+        <img class="screen-shot" src="images/ip-identity-screen.png" alt="Inflection Point identity screen showing AI avatar generation and character traits" />
+        <div class="screen-title">Identity builder</div>
+        <p class="screen-desc">Shape the character you are trying to become, then give that identity something visual enough to feel real.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -317,8 +351,8 @@
         <li>Restore your purchase anytime on the same Apple ID</li>
       </ul>
     </div>
-    <a href="mailto:nick@nickrae.net?subject=Inflection%20Point%20launch" class="launch-cta">Get launch updates</a>
-    <p class="cta-fine">Questions or launch access: nick@nickrae.net</p>
+    <a href="mailto:nwrae76@gmail.com?subject=Inflection%20Point%20launch" class="launch-cta">Get launch updates</a>
+    <p class="cta-fine">Questions or launch access: nwrae76@gmail.com</p>
   </div>
 </section>
 
@@ -331,7 +365,7 @@
     <div class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms</a>
-      <a href="mailto:nick@nickrae.net?subject=Inflection%20Point">Contact</a>
+      <a href="mailto:nwrae76@gmail.com?subject=Inflection%20Point">Contact</a>
     </div>
     <div class="footer-copy">&copy; 2026 Inflection Point. All rights reserved.</div>
   </div>
