@@ -6,13 +6,40 @@
   <title>Inflection Point — Stop Repeating Yesterday</title>
   <meta name="description" content="Inflection Point is an identity-based habit and quest system for iPhone. Define your future self, turn goals into quests, break autopilot, and review every night." />
   <meta name="theme-color" content="#050505" />
+  <link rel="canonical" href="https://inflectionpoint.me/" />
   <meta property="og:title" content="Inflection Point — Stop Repeating Yesterday" />
   <meta property="og:description" content="Build daily quests, define your future self, break autopilot, and review each night with an identity-based system for real progress." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://inflectionpoint.me/" />
   <meta property="og:image" content="https://inflectionpoint.me/images/app-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Inflection Point — Stop Repeating Yesterday" />
+  <meta name="twitter:description" content="An identity-based habit, quest, and reflection system for iPhone." />
+  <meta name="twitter:image" content="https://inflectionpoint.me/images/app-icon.png" />
   <link rel="icon" type="image/png" href="images/app-icon.png" />
   <link rel="apple-touch-icon" href="images/app-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Inflection Point",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS",
+    "description": "An identity-based habit, quest, and reflection system for iPhone.",
+    "url": "https://inflectionpoint.me/",
+    "offers": {
+      "@type": "Offer",
+      "price": "14.99",
+      "priceCurrency": "USD",
+      "description": "3-day premium trial, then one-time lifetime unlock. No subscription."
+    }
+  }
+  </script>
+  <script>
+    if (window.location.pathname === '/index.html') {
+      window.location.replace('https://inflectionpoint.me/');
+    }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -66,6 +93,10 @@
       pointer-events: none;
     }
     a { color: inherit; }
+    a:focus-visible, .btn:focus-visible, .nav-cta:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
     .shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
     nav {
       position: sticky;
@@ -303,7 +334,11 @@
       .nav-links a:not(.nav-cta) { display: none; }
       .nav-inner, .shell { width: min(100% - 28px, 1160px); }
       .brand { font-size: 0.82rem; }
+      .nav-inner { min-height: 62px; }
       .nav-cta { padding: 9px 12px; font-size: 0.8rem; }
+      .hero { padding: 58px 0 64px; min-height: auto; }
+      .hero-sub { margin-bottom: 24px; }
+      .mini-proof { margin-top: 24px; }
       section { padding: 72px 0; }
       .screens-grid { margin-left: -14px; margin-right: -14px; padding-left: 14px; padding-right: 14px; }
       .hero-shot { width: min(318px, 82vw); }
@@ -319,7 +354,7 @@
         <a href="#screens">Screens</a>
         <a href="#systems">Systems</a>
         <a href="#pricing">Pricing</a>
-        <a class="nav-cta" href="https://apps.apple.com/app/id6759310530">App Store</a>
+        <a class="nav-cta" href="mailto:nick@nickrae.net?subject=Inflection%20Point%20launch%20notice">Get Notified</a>
       </div>
     </div>
   </nav>
@@ -331,11 +366,11 @@
         <h1>Stop Repeating <span>Yesterday</span></h1>
         <p class="hero-sub">Inflection Point turns self-improvement into a daily operating system: define your future self, convert goals into quests, interrupt autopilot, and review each night so progress compounds.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://apps.apple.com/app/id6759310530">Download on the App Store</a>
+          <a class="btn btn-primary" href="mailto:nick@nickrae.net?subject=Inflection%20Point%20launch%20notice">Email Me When Live</a>
           <a class="btn btn-secondary" href="#screens">See the system</a>
         </div>
         <div class="mini-proof" aria-label="Launch details">
-          <div><strong>3 days free</strong>Full premium trial</div>
+          <div><strong>3 days free</strong>Try the full system</div>
           <div><strong>$14.99 once</strong>Lifetime unlock</div>
           <div><strong>No subscription</strong>No auto-renewal</div>
         </div>
@@ -437,10 +472,10 @@
         <article class="launch-card">
           <div>
             <h2>Build your next self.</h2>
-            <p class="section-copy" style="margin-top:14px;">Stop repeating yesterday. Open the app, define the system, and make today's actions harder to ignore.</p>
+            <p class="section-copy" style="margin-top:14px;">The App Store listing is pending Apple approval. Get the launch notice now, then download when Apple flips the page live.</p>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://apps.apple.com/app/id6759310530">Get Inflection Point</a>
+            <a class="btn btn-primary" href="mailto:nick@nickrae.net?subject=Inflection%20Point%20launch%20notice">Get Launch Notice</a>
             <a class="btn btn-secondary" href="mailto:nick@nickrae.net?subject=Inflection%20Point">Contact support</a>
           </div>
         </article>
