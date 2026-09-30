@@ -12,7 +12,7 @@ Static GitHub Pages website for [inflectionpoint.me](https://inflectionpoint.me/
 
 Pushes to `main` deploy automatically through GitHub Pages.
 
-The initial redesign was published at `5963424` on September 30, 2026. Additional audit actions are prepared on `codex/inflectionpoint-audit-followups`; final follow-up deployment and live QA remain pending in this record.
+The initial redesign was published at `5963424` on September 30, 2026. Additional audit actions are delivered in [PR #3](https://github.com/nicholasrae/inflection-point-site/pull/3). That review and the external deployment record identify the deployed commit and fresh public verification; this source document does not substitute local results for live evidence.
 
 ## Launch and product copy
 
