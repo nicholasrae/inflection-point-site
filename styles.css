@@ -24,6 +24,18 @@
   --wrap: 1160px;
   --anchor-offset: 100px;
 }
+.error-page h1 {
+  font-size: clamp(4rem, 12vw, 7rem);
+  margin-top: 25px;
+}
+.error-page .error-copy {
+  color: var(--muted);
+  max-width: 450px;
+  margin-top: 25px;
+}
+.error-page .error-action {
+  margin-top: 32px;
+}
 *,
 *::before,
 *::after {

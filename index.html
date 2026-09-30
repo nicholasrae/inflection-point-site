@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'sha256-TXdScjPYOaSFlP1XBZmEHQOupleFvwS9CU7XRD0c3RM='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#080807" />
     <meta name="color-scheme" content="dark" />
@@ -48,8 +53,12 @@
       name="twitter:image:alt"
       content="Inflection Point. Stop repeating yesterday. Define, act, reflect."
     />
-    <link rel="icon" type="image/png" href="/images/app-icon.png" />
-    <link rel="apple-touch-icon" href="/images/app-icon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon-32.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
     <link
       rel="preload"
       href="/fonts/barlow-condensed-latin-700.woff2"
@@ -83,7 +92,7 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="brand" href="/" aria-label="Inflection Point home">
-          <img src="/images/app-icon.png" alt="" width="34" height="34" />
+          <img src="/images/brand-icon.png" alt="" width="34" height="34" />
           <span translate="no">Inflection Point</span>
         </a>
         <nav aria-label="Main navigation">
@@ -357,7 +366,7 @@
               <ul class="check-list">
                 <li>Unlimited synthesis and projects</li>
                 <li>Full reflection history</li>
-                <li>Complete data export</li>
+                <li>Complete journey export</li>
               </ul>
               <p class="access-note">
                 Planned US price. Other storefronts use Apple’s localized price,
@@ -416,6 +425,21 @@
                   In the planned release, free access shows the most recent
                   seven days. Older entries remain saved on your device;
                   lifetime access lets you view the full history.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                What’s in a journey export?<span aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  In the planned release, full-access preview and lifetime
+                  access include JSON export of your journal collections and an
+                  embedded avatar when present. Purchase, preview/usage and
+                  reminder preferences are separate. Earlier Expo exports were
+                  partial; see the <a href="/privacy.html">Privacy Policy</a>
+                  for version differences.
                 </p>
               </div>
             </details>
@@ -499,10 +523,12 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <a class="brand" href="/" aria-label="Inflection Point home"
-          ><img src="/images/app-icon.png" alt="" width="30" height="30" /><span
-            translate="no"
-            >Inflection Point</span
-          ></a
+          ><img
+            src="/images/brand-icon.png"
+            alt=""
+            width="30"
+            height="30"
+          /><span translate="no">Inflection Point</span></a
         >
         <nav aria-label="Footer navigation">
           <a href="/privacy.html">Privacy Policy</a
