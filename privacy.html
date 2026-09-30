@@ -52,7 +52,9 @@
 
       <h2>Purchases and platform services</h2>
 
-      <p>Apple processes payments. The app does not receive your full payment-card information. RevenueCat validates purchases, supplies lifetime access and restore information, and provides purchase analytics. RevenueCat uses an automatically generated app user identifier and purchase records; its service may also receive technical information such as device type, operating system, and app version. The app does not send your journal, profile image, name, or email as RevenueCat customer attributes. See <a href="https://www.revenuecat.com/privacy-policy">RevenueCat&#x27;s Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple&#x27;s Privacy Policy</a>.</p>
+      <p>Apple processes payments and supplies signed purchase and restore information through StoreKit. The app verifies purchase access on your device and retains a local ownership cache. It does not receive your full payment-card information, send purchase records to an Inflection Point server, or use a third-party purchase analytics SDK. See <a href="https://www.apple.com/legal/privacy/">Apple&#x27;s Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/data/en/appstore/">App Store privacy information</a>.</p>
+
+      <p>Earlier releases used RevenueCat for purchase validation, access, restore, and purchase analytics. Those releases used an automatically generated identifier and purchase records, and the provider may have received technical information such as device type, operating system, and app version. The current StoreKit app does not contact RevenueCat; an upgrade preserves historical local purchase preferences and grants for migration. Prior records held by RevenueCat remain subject to <a href="https://www.revenuecat.com/privacy-policy">RevenueCat&#x27;s Privacy Policy</a>. Removing its SDK does not delete prior provider records.</p>
 
       <p>The Swift app does not integrate advertising, advertising identifiers, or a third-party crash or session analytics SDK. Apple may handle platform diagnostics under your Apple privacy settings. Opening a legal or support link takes you to an external browser or email service, which has its own practices. If you email support, we receive the address, message, and attachments you choose to send.</p>
 
@@ -68,7 +70,7 @@
 
       <p>Local records remain until you reset the app or remove its local data. Removing an avatar from your identity stops displaying it; older app-owned image files may remain until Reset all data. Reset all data removes the app-owned journey, recovery files, journal backups, avatars, and local export files. It preserves purchase ownership and preview/usage records so it does not revoke a purchase or restart the preview. Copies you previously exported, Apple device backups, and records retained by service providers are not deleted by this action.</p>
 
-      <p>Apple and RevenueCat retain purchase records under their own service and legal requirements. AI-provider retention is not controlled by the app, and no fixed retention period is promised here. Online processing may occur in countries other than your own under the applicable providers&#x27; practices.</p>
+      <p>Apple retains purchase records under its own service and legal requirements. Historical RevenueCat records remain subject to that provider&#x27;s practices. AI-provider retention is not controlled by the app, and no fixed retention period is promised here. Online processing may occur in countries other than your own under the applicable providers&#x27; practices.</p>
 
       <h2>Your choices and privacy requests</h2>
 
