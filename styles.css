@@ -472,9 +472,10 @@ h3 {
 }
 .access-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 28px;
-  margin-top: 48px;
+  max-width: 620px;
+  margin: 48px auto 0;
 }
 .access-card {
   padding: 34px 36px;
