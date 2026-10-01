@@ -12,7 +12,7 @@
     <title>Inflection Point Privacy Policy</title>
     <meta
       name="description"
-      content="Privacy Policy for Inflection Point: local journals, on-device debriefs, optional cloud avatars, purchases and your choices."
+      content="Privacy Policy for Inflection Point: local journals, on-device debriefs, system Image Playground avatars, purchases and your choices."
     />
     <link rel="canonical" href="https://inflectionpoint.me/privacy.html" />
     <link
@@ -66,9 +66,10 @@
           You may choose a profile photo or take an avatar photo using the
           camera. The planned StoreKit release copies the chosen image into
           app-owned local storage. Camera access is requested when you choose to
-          take a photo. A photo you select is not included in the app’s AI
-          avatar-generation request. The app does not request your contacts or
-          device location.
+          take a photo. The app does not automatically pass your saved avatar
+          or chosen profile photo to Image Playground. You may separately
+          choose a personal photo inside Apple’s system sheet. The app does not
+          request your contacts or device location.
         </p>
         <h2>2. Optional AI: daily debriefs and avatars</h2>
         <p>
@@ -91,16 +92,27 @@
           or that every iPhone can generate debriefs.
         </p>
         <p>
-          <strong>AI avatars remain online.</strong> If you request an AI avatar,
-          a text prompt containing selected traits, optional character name and
-          vision descriptions is sent to Rork toolkit services. The planned
-          native release lets you omit name and vision context and requires
-          agreement to its feature-specific data-sharing explanation first.
-          Your selected profile photo is not sent. The service returns a
-          generated image for the app to save locally. An online service also
-          receives ordinary network information, such as the request’s source
-          IP address. This feature is separate from the on-device daily debrief;
-          no offline avatar-generation promise is made.
+          <strong>Optional avatars use Apple’s system Image Playground.</strong>
+          The planned native release first asks you to choose the text to share
+          and agree to the explanation. This can include selected active traits,
+          an optional character name and up to two vision descriptions. The app
+          passes that selected text to Apple’s sheet, not to Rork, and does not
+          supply a source photo. You can edit the description or explicitly
+          choose a personal photo in the system sheet. The app receives the
+          image you choose to use and saves it in app-owned local storage.
+        </p>
+        <p>
+          This app offers Apple’s Illustration, Animation and Sketch styles,
+          without an external-provider style. Apple controls the system
+          generation experience and processing. On iOS 27, Image Playground
+          uses Private Cloud Compute, Apple’s server-based image models; this
+          is separate from the on-device daily debrief. Read
+          <a href="https://www.apple.com/legal/privacy/data/en/intelligence-engine/"
+            >Apple’s Intelligence privacy information</a
+          >. Image Playground depends on a supported device, settings,
+          language and region, network access and Apple’s system usage limits.
+          Choosing a photo or taking a camera photo remains an alternative.
+          No offline or unlimited avatar-generation promise is made.
         </p>
         <p>
           <strong>Earlier versions:</strong> Expo versions and earlier native
@@ -110,7 +122,9 @@
           categories/reasons, anti-visions and categories/fear levels, and active
           traits and anti-traits, rather than every past reflection. Earlier
           Expo avatar requests include the first two vision descriptions.
-          Earlier interfaces and consent controls may differ. These historical
+          Earlier native betas also use Rork for avatars, with selected traits
+          and optional character name and vision context. Earlier interfaces
+          and consent controls may differ. These historical
           online requests are not made local by updating the app.
         </p>
         <p>
@@ -122,8 +136,9 @@
           promise immediate deletion, no retention, no training or no human
           access. Avoid sending information you do not want processed online.
           Local reset cannot delete copies already processed by an online
-          provider. These limitations apply to cloud avatar requests and
-          historical online debriefs. Journal content can also leave the device
+          provider. These unconfirmed toolkit terms concern historical Rork
+          avatar requests and online debriefs, not a claim about Apple’s system
+          Image Playground processing. Journal content can also leave the device
           when you export or share it, or through device backups.
         </p>
         <h2>3. Purchases and earlier beta services</h2>
@@ -156,7 +171,7 @@
           generation and app-lifecycle events to PostHog when enabled by the
           build configuration. This audit has not confirmed whether that
           conditional analytics path was enabled in a distributed beta. The
-          planned StoreKit direct-request client does not include that SDK
+          planned StoreKit release does not include that SDK
           analytics path, advertising identifiers or a third-party crash/session
           analytics SDK. Apple may collect platform diagnostics under your Apple
           privacy settings.
