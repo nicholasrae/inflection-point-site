@@ -434,6 +434,10 @@ h3 {
   gap: 36px;
   margin-top: 52px;
 }
+.preview-grid-native {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
 .preview-image {
   display: flex;
   align-items: flex-start;
@@ -702,6 +706,10 @@ h3 {
   }
   .preview-grid {
     gap: 22px;
+  }
+  .preview-grid-native {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 22px;
   }
   .preview-image {
     padding: 22px 15px 0;
