@@ -56,9 +56,11 @@
           The app stores the information you enter, including your character
           name, visions and anti-visions, reasons, traits, goals, projects,
           quests, constraints, morning exercises, reflections and progress. It
-          also stores settings, reminder preferences, preview dates, usage
-          limits and purchase access. There is no separate Inflection Point
-          account or app-managed cloud journal sync.
+          also stores settings, reminder preferences and purchase access,
+          and preserves historical preview and usage records. The planned
+          release has no free trial, ongoing free tier or subscription. There
+          is no separate Inflection Point account or app-managed cloud journal
+          sync.
         </p>
         <p>
           You may choose a profile photo or take an avatar photo using the
@@ -166,10 +168,11 @@
           identity, quests and daily logs; it is not a complete backup of all
           collections. The earlier native beta already includes journey export
           during full access. The planned StoreKit release provides complete
-          JSON export during its full-access preview or with lifetime access,
-          including the journal and an embedded avatar when present. Purchase,
-          preview/usage and reminder preferences are separate and are not
-          included in that journey export. Native import replaces this device’s
+          JSON export, including the journal and an embedded avatar when
+          present. Export and recovery of existing data remain available without
+          a purchase. Purchase, historical preview/usage and reminder preferences
+          are separate and are not included in that journey export. Native import
+          replaces this device’s
           journey after confirmation. Copies you export leave app-controlled
           storage and remain wherever you save or share them.
         </p>
@@ -188,18 +191,23 @@
           deleted.
         </p>
         <p>
-          <strong>Planned StoreKit history:</strong> the free tier limits
-          visibility to seven days while retaining older saved entries. The
-          migration reads the legacy journal and retains the original for
-          recovery until Reset all data. An unreadable journal is preserved for
+          <strong>Earlier native beta history:</strong> a free-access history
+          window limits visibility while retaining older saved entries.
+        </p>
+        <p>
+          <strong>Planned StoreKit history:</strong> lifetime access includes the
+          full saved history, with no free-tier visibility window. The migration
+          reads the legacy journal and retains the original for recovery until
+          Reset all data. An unreadable journal is preserved for
           recovery rather than silently replaced. Real populated-device upgrade
           validation remains a release check.
         </p>
         <p>
           In the planned StoreKit release, Reset all data removes the local
           journey, app-owned recovery copies, backups, avatars and local export
-          files. It keeps purchase ownership and preview/usage records. Removing
-          a displayed avatar can leave older app-owned image files until reset.
+          files. It keeps purchase ownership and historical preview/usage records.
+          Removing a displayed avatar can leave older app-owned image files until
+          reset.
           Reset does not delete copies exported elsewhere, Apple backups or
           provider records. Earlier Expo reset behavior differs.
         </p>
