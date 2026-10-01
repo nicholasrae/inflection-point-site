@@ -12,7 +12,7 @@
     <title>Inflection Point Privacy Policy</title>
     <meta
       name="description"
-      content="Privacy Policy for Inflection Point: local journals, optional online AI, purchases and your choices."
+      content="Privacy Policy for Inflection Point: local journals, on-device debriefs, optional cloud avatars, purchases and your choices."
     />
     <link rel="canonical" href="https://inflectionpoint.me/privacy.html" />
     <link
@@ -21,7 +21,7 @@
       sizes="32x32"
       href="/images/favicon-32.png"
     />
-    <link rel="stylesheet" href="/legal.css" />
+    <link rel="stylesheet" href="/legal.css?v=20260930-native" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -70,37 +70,48 @@
           avatar-generation request. The app does not request your contacts or
           device location.
         </p>
-        <h2>2. Optional online AI</h2>
+        <h2>2. Optional AI: daily debriefs and avatars</h2>
         <p>
-          Manual reflection does not send the entry to an AI generator. If you
-          request an AI debrief or avatar, relevant text is sent to Rork toolkit
-          services for online generation. An online service also receives
-          ordinary network information, such as the request’s source IP address.
-          Journal content can therefore leave the device for AI requests as well
-          as for exports and device backups.
+          Manual reflection does not send the entry to an AI generator. In the
+          planned native release, an optional daily debrief uses Apple’s
+          on-device Foundation Models framework. Your reflection, selected wins,
+          violated constraints and relevant identity context are processed on
+          your iPhone. The app does not upload that debrief input for generation
+          or fall back to a cloud debrief service. Saving a debrief makes the
+          result part of your local journal.
         </p>
-        <ul>
-          <li>
-            <strong>Debrief:</strong> your current reflection, selected wins,
-            selected violated-constraint names, character name, visions and
-            categories/reasons, anti-visions and categories/fear levels, and
-            active traits and anti-traits. The request does not include every
-            past reflection.
-          </li>
-          <li>
-            <strong>Avatar:</strong> a text prompt containing selected traits,
-            optional character name and vision descriptions. Earlier Expo
-            versions include the first two vision descriptions. The planned
-            StoreKit release lets you omit name and vision context; your
-            existing profile photo is not sent.
-          </li>
-        </ul>
         <p>
-          The planned StoreKit release requires agreement to its
-          feature-specific data-sharing explanation before a request. Earlier
-          beta interfaces may differ. Providers return generated text or images
-          to the app; saving a debrief makes it part of the local journal. AI
-          processing is optional, and manual reflection remains available.
+          On-device debriefs require an Apple Intelligence-eligible iPhone,
+          supported language and region, Apple Intelligence enabled and the
+          model downloaded and ready. When the model is unavailable or cannot
+          complete a request, you can use manual Quick Log instead. See
+          <a href="https://support.apple.com/en-us/121115"
+            >Apple’s availability information</a
+          >. This does not mean all Apple Intelligence features run on device,
+          or that every iPhone can generate debriefs.
+        </p>
+        <p>
+          <strong>AI avatars remain online.</strong> If you request an AI avatar,
+          a text prompt containing selected traits, optional character name and
+          vision descriptions is sent to Rork toolkit services. The planned
+          native release lets you omit name and vision context and requires
+          agreement to its feature-specific data-sharing explanation first.
+          Your selected profile photo is not sent. The service returns a
+          generated image for the app to save locally. An online service also
+          receives ordinary network information, such as the request’s source
+          IP address. This feature is separate from the on-device daily debrief;
+          no offline avatar-generation promise is made.
+        </p>
+        <p>
+          <strong>Earlier versions:</strong> Expo versions and earlier native
+          betas send AI debrief requests to Rork toolkit services. Those requests
+          include the current reflection, selected wins, selected
+          violated-constraint names, character name, visions and
+          categories/reasons, anti-visions and categories/fear levels, and active
+          traits and anti-traits, rather than every past reflection. Earlier
+          Expo avatar requests include the first two vision descriptions.
+          Earlier interfaces and consent controls may differ. These historical
+          online requests are not made local by updating the app.
         </p>
         <p>
           Rork and its service providers may process submitted context and
@@ -111,7 +122,9 @@
           promise immediate deletion, no retention, no training or no human
           access. Avoid sending information you do not want processed online.
           Local reset cannot delete copies already processed by an online
-          provider.
+          provider. These limitations apply to cloud avatar requests and
+          historical online debriefs. Journal content can also leave the device
+          when you export or share it, or through device backups.
         </p>
         <h2>3. Purchases and earlier beta services</h2>
         <p>
