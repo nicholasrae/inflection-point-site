@@ -22,7 +22,7 @@
   --amber: #ffb800;
   --line: #32322d;
   --wrap: 1160px;
-  --anchor-offset: 100px;
+  --anchor-offset: calc(5rem + 32px);
 }
 .error-page h1 {
   font-size: clamp(4rem, 12vw, 7rem);
@@ -49,8 +49,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Manrope, "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.65;
+  overflow-wrap: anywhere;
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -120,6 +121,8 @@ h3 {
 }
 .header-inner {
   min-height: 82px;
+  flex-wrap: wrap;
+  padding-block: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,14 +136,16 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-  white-space: nowrap;
+  min-width: 0;
   min-height: 44px;
 }
 .brand img {
+  flex: none;
   border-radius: 9px;
 }
 .site-header nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 22px;
 }
 .site-header nav a,
@@ -169,6 +174,7 @@ h3 {
   line-height: 1.4;
   font-weight: 700;
   min-height: 56px;
+  max-width: 100%;
   padding: 16px 22px;
   border: 1px solid var(--amber);
   border-radius: 3px;
@@ -220,13 +226,14 @@ h3 {
 }
 .hero {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   align-items: center;
   gap: 40px;
   padding-block: 68px 52px;
   min-height: 770px;
 }
 .hero-copy {
+  min-width: 0;
   position: relative;
   z-index: 1;
 }
@@ -304,6 +311,18 @@ h3 {
   justify-content: center;
   min-height: 590px;
 }
+.screenshot-link {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+}
+.screenshot-link picture {
+  display: block;
+}
+.screenshot-link:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 5px;
+}
 .hero-screen {
   width: 260px;
   position: relative;
@@ -344,6 +363,9 @@ h3 {
   text-align: center;
   padding-top: 8px;
 }
+#main {
+  scroll-margin-top: var(--anchor-offset);
+}
 .section {
   padding-block: 96px;
   border-top: 1px solid var(--line);
@@ -366,12 +388,59 @@ h3 {
 }
 .split-heading {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: 80px;
   align-items: end;
 }
 .split-heading > p {
   margin: 0 0 4px;
+}
+/* Guided reset is a reviewed sequence, with an authentic app capture beside it. */
+.reset-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: start;
+  gap: 80px;
+  margin-top: 48px;
+}
+.reset-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.reset-steps li {
+  padding-block: 26px;
+  border-top: 1px solid var(--line);
+}
+.reset-steps .step-number {
+  display: block;
+}
+.reset-steps h3 {
+  margin-top: 12px;
+}
+.reset-steps p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.reset-preview {
+  min-width: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+}
+.reset-preview figcaption {
+  color: var(--dim);
+  font-size: 0.73rem;
+  line-height: 1.65;
+  margin-top: 18px;
+}
+.preview-image .screenshot-link:focus-visible {
+  outline-offset: -4px;
+}
+.preview-image picture {
+  display: block;
+  min-width: 0;
 }
 .protocol-section {
   background: #0d0d0b;
@@ -537,6 +606,7 @@ h3 {
 }
 .access-card-top {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -549,7 +619,7 @@ h3 {
   border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  white-space: nowrap;
+  max-width: 100%;
 }
 .price {
   font-size: 2rem;
@@ -565,7 +635,7 @@ h3 {
 }
 .faq-layout {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
   gap: 100px;
 }
 .faq-list {
@@ -613,7 +683,7 @@ h3 {
 }
 .launch-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: 50px;
   align-items: center;
 }
@@ -658,6 +728,7 @@ h3 {
 }
 .site-footer nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 .site-footer p {
@@ -670,6 +741,13 @@ h3 {
   }
 }
 @media (max-width: 1050px) {
+  :root {
+    --anchor-offset: 20px;
+  }
+  /* Let a wrapped header leave the viewport instead of covering enlarged text. */
+  .site-header {
+    position: static;
+  }
   .wrap {
     width: calc(100% - 48px);
   }
@@ -686,7 +764,7 @@ h3 {
     gap: 24px;
   }
   .hero h1 {
-    font-size: 7.2rem;
+    font-size: clamp(4.6rem, 9vw, 7.2rem);
   }
   .hero-screen {
     width: 230px;
@@ -700,6 +778,9 @@ h3 {
   .protocol-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 35px;
+  }
+  .reset-layout {
+    gap: 40px;
   }
   .split-heading {
     gap: 40px;
@@ -722,9 +803,6 @@ h3 {
   }
 }
 @media (max-width: 760px) {
-  :root {
-    --anchor-offset: 135px;
-  }
   .wrap {
     width: calc(100% - 40px);
   }
@@ -845,6 +923,14 @@ h3 {
   .split-heading {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+  .reset-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    margin-top: 35px;
+  }
+  .reset-preview {
+    justify-self: center;
   }
   .protocol-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
