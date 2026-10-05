@@ -34,7 +34,8 @@ The hero uses Dashboard and the four-screen gallery follows the native tabs: Das
 - `privacy.html`, `terms.html`, `legal.css`: current September 30 wording and shared presentation.
 - `privacy-2026-04-26.html`, `terms-2026-04-26.html`: previous policies, marked archival and excluded from indexing.
 - `404.html`: branded missing-page navigation with external CSS.
-- `images/`: app captures, social card, 32×32 favicon, 64×64 brand and 180×180 touch icons. Preserve the original 800×800 icon; the smaller PNGs are derived assets.
+- `images/`: app captures and versioned branding assets. Current October 5 icons derive from the native 1024×1024 amber/ivory icon: 32×32 favicon, 128×128 brand and 180×180 touch icon. The social card remains 1200×630. Preserve earlier assets as historical files; see [icon provenance](BRANDING-20261005.md).
+- `_design/social-card.html`: editable source for the current social card, using bundled fonts and the versioned native icon. Render locally at 1200×630 after fonts and images finish loading. The underscore-prefixed source directory is excluded by the current GitHub Pages/Jekyll build.
 - `fonts/`: self-hosted Manrope and Barlow Condensed, with their SIL Open Font License files. Retain those notices.
 - `robots.txt`, `sitemap.xml`, `CNAME`: indexing and GitHub Pages configuration.
 
