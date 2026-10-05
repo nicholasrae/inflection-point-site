@@ -5,7 +5,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; script-src 'sha256-P+ABrYqSzmt97gKMElEIkHvj4P0bBPBOw8/XN8gBMuc='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+      content="default-src 'none'; script-src 'sha256-hTrordAKheD3lnRMwCoAy7xU3dK8fsGDGfFX58yZhkg='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#080807" />
@@ -13,7 +13,7 @@
     <title>Inflection Point — Stop Repeating Yesterday</title>
     <meta
       name="description"
-      content="An identity, daily quest and reflection app for iPhone. Define your future, choose today's actions and review your day. One-time lifetime access, without a subscription."
+      content="A guided reset and daily practice for iPhone. Reflect in the morning, notice patterns, and review a plan for tomorrow. One-time lifetime access, without a subscription."
     />
     <link rel="canonical" href="https://inflectionpoint.me/" />
     <meta property="og:type" content="website" />
@@ -73,15 +73,15 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="/styles.css?v=20260930-native" />
+    <link rel="stylesheet" href="/styles.css?v=20261005-alignment" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Inflection Point",
         "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS",
-        "description": "An identity, daily quest and reflection app for iPhone. App Store release in preparation.",
+        "operatingSystem": "iOS 26.0 or later",
+        "description": "A guided reset and daily practice for iPhone: morning reflection, daytime check-ins and reviewed evening plans. App Store release in preparation.",
         "url": "https://inflectionpoint.me/",
         "image": "https://inflectionpoint.me/images/social-card-20261005.png"
       }
@@ -92,10 +92,16 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="brand" href="/" aria-label="Inflection Point home">
-          <img src="/images/brand-icon-20261005.png" alt="" width="34" height="34" />
+          <img
+            src="/images/brand-icon-20261005.png"
+            alt=""
+            width="34"
+            height="34"
+          />
           <span translate="no">Inflection Point</span>
         </a>
         <nav aria-label="Main navigation">
+          <a href="#reset">Reset</a>
           <a href="#protocol">The Protocol</a>
           <a href="#preview">Preview</a>
           <a href="#access">Access</a>
@@ -120,18 +126,21 @@
             End each day with an honest review.
           </p>
           <p class="hero-description">
-            Build a daily practice around the person you want to become, with a
-            clear direction, small actions and space to reflect.
+            Start with a guided reset: reflect in the morning, notice patterns
+            during the day, then review a plan for tomorrow. Keep returning to
+            the small actions that move you forward.
           </p>
           <div class="actions">
             <a class="button" href="#launch"
               >Request a Launch Update <span aria-hidden="true">↗</span></a
             >
-            <a class="text-link" href="#protocol"
-              >Explore the Protocol <span aria-hidden="true">↓</span></a
+            <a class="text-link" href="#reset"
+              >Explore the Reset <span aria-hidden="true">↓</span></a
             >
           </div>
-          <p class="launch-status">App Store release in preparation.</p>
+          <p class="launch-status">
+            App Store release in preparation. Requires iOS 26 or later.
+          </p>
           <ul class="hero-facts" aria-label="Planned access">
             <li>Pay once</li>
             <li>Lifetime access</li>
@@ -160,16 +169,28 @@
                 stroke-width="1"
               />
             </svg>
-            <img
-              class="hero-screen"
-              src="/images/native-dashboard-2026-09-30.png"
-              width="1206"
-              height="2622"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-              alt="Native Dashboard showing identity, daily focus and quest progress with fictional sample data."
-            />
+            <a
+              class="screenshot-link"
+              href="/images/native-dashboard-2026-10-05.png"
+              aria-label="View Dashboard screenshot at full size"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="/images/native-dashboard-2026-10-05.webp"
+                />
+                <img
+                  class="hero-screen"
+                  src="/images/native-dashboard-2026-10-05.png"
+                  width="1206"
+                  height="2622"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                  alt="Native Dashboard showing identity, daily focus and quest progress with fictional sample data."
+                />
+              </picture>
+            </a>
             <span class="stage-note stage-note-top" aria-hidden="true"
               >Direction<br />before momentum.</span
             >
@@ -177,8 +198,100 @@
               >Make the next<br />action count.</span
             >
           </div>
-          <figcaption>Native development build · 2026.9.30 (2) · Fictional sample data</figcaption>
+          <figcaption>
+            Native development build · 2026.10.5 (3) · Fictional sample data
+          </figcaption>
         </figure>
+      </section>
+
+      <section
+        class="reset-section section"
+        id="reset"
+        aria-labelledby="reset-heading"
+      >
+        <div class="wrap">
+          <div class="section-heading">
+            <p class="eyebrow">01 / A guided reset</p>
+            <h2 id="reset-heading">
+              From reflection<br /><span>to a plan.</span>
+            </h2>
+            <p>
+              Make space to notice what needs to change. Move through the day at
+              your own pace, then choose what you want to do next.
+            </p>
+          </div>
+          <div class="reset-layout">
+            <ol class="reset-steps">
+              <li>
+                <span class="step-number" aria-hidden="true">01</span>
+                <h3>Morning: look at the pattern.</h3>
+                <p>
+                  Eight prompts help you reflect on your habits, identity and
+                  direction. Save your progress, pause and return when you’re
+                  ready.
+                </p>
+              </li>
+              <li>
+                <span class="step-number" aria-hidden="true">02</span>
+                <h3>Daytime: notice it in real life.</h3>
+                <p>
+                  Record short pattern check-ins as the day unfolds. Optional
+                  reminders help you make room for the practice on your
+                  schedule.
+                </p>
+              </li>
+              <li>
+                <span class="step-number" aria-hidden="true">03</span>
+                <h3>Evening: choose tomorrow’s direction.</h3>
+                <p>
+                  Bring your reflections into a yearly goal, a monthly project
+                  and two or three actions for tomorrow. Review everything
+                  before choosing Create my plan. You write it; you decide what
+                  to save.
+                </p>
+              </li>
+            </ol>
+            <figure class="reset-preview">
+              <div class="preview-image">
+                <a
+                  class="screenshot-link"
+                  href="/images/native-guided-plan-2026-10-05.png"
+                  aria-label="View the guided plan screenshot at full size"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/images/native-guided-plan-2026-10-05.webp"
+                    />
+                    <img
+                      src="/images/native-guided-plan-2026-10-05.png"
+                      width="1206"
+                      height="2622"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Saved guided evening plan linking a yearly goal, monthly project and three actions, using fictional sample data."
+                    />
+                  </picture>
+                </a>
+              </div>
+              <figcaption>
+                A saved plan connected to your reflections.<br />
+                Native development build · 2026.10.5 (3) · Fictional sample data
+              </figcaption>
+            </figure>
+          </div>
+          <div class="protocol-footnote">
+            <span class="mini-rule" aria-hidden="true"></span>
+            <p>
+              A manual exercise, with no AI required. Inspired by Dan Koe’s
+              <a
+                href="https://letters.thedankoe.com/p/how-to-fix-your-entire-life-in-1"
+                >one-day reset article</a
+              >. Inflection Point is an independent app, not affiliated with or
+              endorsed by the author.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section
@@ -188,7 +301,7 @@
       >
         <div class="wrap">
           <div class="section-heading">
-            <p class="eyebrow">01 / The protocol</p>
+            <p class="eyebrow">02 / The protocol</p>
             <h2 id="protocol-heading">
               A future worth choosing.<br /><span>A day you can act on.</span>
             </h2>
@@ -244,27 +357,39 @@
         <div class="wrap">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow">02 / Inside the app</p>
+              <p class="eyebrow">03 / Inside the app</p>
               <h2 id="preview-heading">Direction.<br />Action. Reflection.</h2>
             </div>
             <p>
-              One place to connect your identity, daily quests and evening
-              synthesis. Genuine captures of native development version
-              2026.9.30 (2), using fictional sample data. The App Store release
-              is in preparation; the interface may change.
+              Your identity, quests and reflections stay connected across four
+              tabs. Genuine captures of native development version 2026.10.5
+              (3), using fictional sample data. Select a screenshot to view it
+              at full size. The App Store release is in preparation.
             </p>
           </div>
           <div class="preview-grid preview-grid-native">
             <figure class="preview-item">
               <div class="preview-image">
-                <img
-                  src="/images/native-dashboard-2026-09-30.png"
-                  alt="Native Dashboard showing identity, daily focus and quest progress with fictional sample data."
-                  width="1206"
-                  height="2622"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <a
+                  class="screenshot-link"
+                  href="/images/native-dashboard-2026-10-05.png"
+                  aria-label="View Dashboard screenshot at full size"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/images/native-dashboard-2026-10-05.webp"
+                    />
+                    <img
+                      src="/images/native-dashboard-2026-10-05.png"
+                      alt="Native Dashboard showing identity, daily focus and quest progress with fictional sample data."
+                      width="1206"
+                      height="2622"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </a>
               </div>
               <figcaption>
                 <span class="preview-index" aria-hidden="true">01</span>
@@ -276,14 +401,26 @@
             </figure>
             <figure class="preview-item">
               <div class="preview-image">
-                <img
-                  src="/images/native-quests-2026-09-30.png"
-                  alt="Native Quests screen connecting goals, projects and daily quests with fictional sample data."
-                  width="1206"
-                  height="2622"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <a
+                  class="screenshot-link"
+                  href="/images/native-quests-2026-10-05.png"
+                  aria-label="View Quests screenshot at full size"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/images/native-quests-2026-10-05.webp"
+                    />
+                    <img
+                      src="/images/native-quests-2026-10-05.png"
+                      alt="Native Quests screen connecting goals, projects and daily quests with fictional sample data."
+                      width="1206"
+                      height="2622"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </a>
               </div>
               <figcaption>
                 <span class="preview-index" aria-hidden="true">02</span>
@@ -295,14 +432,26 @@
             </figure>
             <figure class="preview-item">
               <div class="preview-image">
-                <img
-                  src="/images/native-synthesis-2026-09-30.png"
-                  alt="Native Synthesis Quick Log with alignment, energy, focus and a fictional reflection."
-                  width="1206"
-                  height="2622"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <a
+                  class="screenshot-link"
+                  href="/images/native-synthesis-2026-10-05.png"
+                  aria-label="View Synthesis screenshot at full size"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/images/native-synthesis-2026-10-05.webp"
+                    />
+                    <img
+                      src="/images/native-synthesis-2026-10-05.png"
+                      alt="Native Synthesis Quick Log with alignment, energy, focus and a fictional reflection."
+                      width="1206"
+                      height="2622"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </a>
               </div>
               <figcaption>
                 <span class="preview-index" aria-hidden="true">03</span>
@@ -314,14 +463,26 @@
             </figure>
             <figure class="preview-item">
               <div class="preview-image">
-                <img
-                  src="/images/native-identity-2026-09-30.png"
-                  alt="Native Identity screen for a fictional character profile."
-                  width="1206"
-                  height="2622"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <a
+                  class="screenshot-link"
+                  href="/images/native-identity-2026-10-05.png"
+                  aria-label="View Identity screenshot at full size"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/images/native-identity-2026-10-05.webp"
+                    />
+                    <img
+                      src="/images/native-identity-2026-10-05.png"
+                      alt="Native Identity screen for a fictional character profile."
+                      width="1206"
+                      height="2622"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </a>
               </div>
               <figcaption>
                 <span class="preview-index" aria-hidden="true">04</span>
@@ -343,7 +504,7 @@
         <div class="wrap">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow">03 / Planned access at launch</p>
+              <p class="eyebrow">04 / Planned access at launch</p>
               <h2 id="access-heading">
                 Pay once.<br /><span>Make it your practice.</span>
               </h2>
@@ -383,7 +544,7 @@
       >
         <div class="wrap faq-layout">
           <div class="section-heading">
-            <p class="eyebrow">04 / A few answers</p>
+            <p class="eyebrow">05 / A few answers</p>
             <h2 id="faq-heading">Before you begin.</h2>
           </div>
           <div class="faq-list">
@@ -402,14 +563,27 @@
             </details>
             <details>
               <summary>
+                Which iPhones are supported?<span aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  The planned app requires iOS 26 or later. Manual planning, the
+                  guided reset and Quick Log work without Apple Intelligence.
+                  Optional AI features have additional hardware, language,
+                  region and availability requirements, described below.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
                 How does payment work?<span aria-hidden="true">+</span>
               </summary>
               <div class="faq-answer">
                 <p>
                   The planned release uses one lifetime purchase to unlock the
                   protocol. There is no free trial, ongoing free tier or
-                  recurring subscription. The planned US price is US$14.99; Apple’s
-                  localized price is shown before you purchase.
+                  recurring subscription. The planned US price is US$14.99;
+                  Apple’s localized price is shown before you purchase.
                 </p>
               </div>
             </details>
@@ -422,9 +596,9 @@
               <div class="faq-answer">
                 <p>
                   The planned lifetime purchase includes your full saved
-                  reflection history. Older saved entries remain on your
-                  device. Earlier Expo versions could delete older entries;
-                  upgrading cannot recover entries already removed. See the
+                  reflection history. Older saved entries remain on your device.
+                  Earlier Expo versions could delete older entries; upgrading
+                  cannot recover entries already removed. See the
                   <a href="/privacy.html">Privacy Policy</a> for version
                   differences.
                 </p>
@@ -437,10 +611,11 @@
               <div class="faq-answer">
                 <p>
                   The planned release provides complete JSON export of your
-                  journal collections and an embedded avatar when present.
-                  Export and recovery of existing data remain available without
-                  a purchase. Purchase, historical preview/usage and reminder
-                  preferences are separate. Earlier Expo exports were
+                  journal collections, including guided reset responses, daytime
+                  check-ins and reviewed plans, with an embedded avatar when
+                  present. Export and recovery of existing data remain available
+                  without a purchase. Purchase, historical preview/usage and
+                  reminder preferences are separate. Earlier Expo exports were
                   partial; see the <a href="/privacy.html">Privacy Policy</a>
                   for version differences.
                 </p>
@@ -452,19 +627,19 @@
               </summary>
               <div class="faq-answer">
                 <p>
-                  You can write synthesis entries manually. The planned
-                  native release uses Apple Intelligence for an optional daily
-                  debrief on your device, with no cloud debrief fallback. It
-                  requires an eligible iPhone, supported language and region,
-                  Apple Intelligence enabled, and the model ready. Use Quick Log
-                  when it is unavailable.
+                  The guided reset and Quick Log are written by you; no AI is
+                  required. The planned native release uses Apple Intelligence
+                  for an optional daily debrief on your device, with no cloud
+                  debrief fallback. It requires an eligible iPhone, supported
+                  language and region, Apple Intelligence enabled, and the model
+                  ready. Use Quick Log when it is unavailable.
                 </p>
                 <p>
-                  Optional avatars use Apple’s system Image Playground after
-                  you agree to share selected text and identity context. This
-                  is separate from the on-device debrief: on iOS 27, Apple’s
-                  image generation uses Private Cloud Compute and system usage
-                  limits. You can use a photo or camera instead. Read the
+                  Optional avatars use Apple’s system Image Playground after you
+                  agree to share selected text and identity context. This is
+                  separate from the on-device debrief: on iOS 27, Apple’s image
+                  generation uses Private Cloud Compute and system usage limits.
+                  You can use a photo or camera instead. Read the
                   <a href="/privacy.html">Privacy Policy</a> before sharing
                   information.
                 </p>
@@ -478,8 +653,9 @@
               </summary>
               <div class="faq-answer">
                 <p>
-                  Use Restore Purchases in Settings with the Apple account that
-                  owns the eligible lifetime purchase. Purchase and restore
+                  Choose Restore purchases on the Lifetime Access screen, or in
+                  Settings if you already have access. Use the Apple account
+                  that owns the eligible lifetime purchase. Purchase and restore
                   require Apple’s services.
                 </p>
               </div>

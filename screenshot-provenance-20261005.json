@@ -1,0 +1,145 @@
+{
+  "version": "2026.10.5",
+  "build": "3",
+  "sourceBaseCommit": "55ba6b902116021b5153dff86c2239c791344c6c",
+  "sourceManifestSHA256": "9e248fd40285a98ad79430642627ce2c93af05626c4f1132f4cf22b8429fc603",
+  "sourceKind": "Literal final-source UI test build with fictional data and scripted UIJourneyPurchasing fixture; genuine app screenshots, not mocked or generatively edited.",
+  "snapshotRelationToCurrent": {
+    "checkedSwiftFiles": 36,
+    "changedSwiftFiles": [],
+    "currentVersion": {
+      "marketingVersion": "2026.10.5",
+      "buildNumber": "4",
+      "developmentTeam": "9XLJZ7Z8H6"
+    },
+    "scope": "App and test Swift files remain byte-identical. Current build 4 icon changes do not relabel these build 3 captures."
+  },
+  "guidedImageScope": "Actual Review your plan screen after explicit plan application, with linked fictional yearly goal, monthly project, three daily actions and boundary. Passing guided journey verified resume and no duplicate application.",
+  "wholeUISuitePassed": false,
+  "retainedFailure": "Same final-source complete native journey later failed one strict AccessibilityXXXL Synthesis textClipped assertion; target/cause unresolved. Normal-preview checkpoint passes do not clear this failure.",
+  "limitations": [
+    "Not physical-device captures or device QA.",
+    "Scripted access fixture does not prove Apple products, purchases, restore or receipts.",
+    "These screenshots do not show or verify on-device model or Image Playground generation.",
+    "Guided fixture settings persistence does not prove OS notification delivery."
+  ],
+  "transform": "PNG copied without modifications; WebP format conversion uses Pillow lossless exact method 6; full decoded RGBA pixels compared equal at original 1206x2622 resolution. No crops, resizing, retouching or simulated UI.",
+  "normalPreviewCheckpointPassed": true,
+  "records": [
+    {
+      "name": "dashboard",
+      "originalSHA256": "3a6998473936cd836e4c55887fb820bfb64b4342c71ca40db2b43b86b0d612b3",
+      "pngBytes": 342709,
+      "pngSHA256": "3a6998473936cd836e4c55887fb820bfb64b4342c71ca40db2b43b86b0d612b3",
+      "webpBytes": 114734,
+      "webpSHA256": "1973e8cd76ae3269698370c6608da714dea1934b0dfab7e9ad4d94e72f4ac829",
+      "width": 1206,
+      "height": 2622,
+      "decodedRGBAIdentical": true,
+      "copiedPNGByteIdentical": true,
+      "captureRecord": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "B926A818-071A-456C-9674-B032567C1601",
+        "deviceName": "InflectionGuidedUI-20261005-134511-29265-1",
+        "exportedFileName": "F5897B9E-017E-4B5B-8835-7D0CFFF0E238.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Dashboard \u2014 normal text_0_645F7691-28CA-4F2B-83C4-7E5E7A3CF549.png",
+        "timestamp": 1791234270.892
+      },
+      "png": "images/native-dashboard-2026-10-05.png",
+      "webp": "images/native-dashboard-2026-10-05.webp"
+    },
+    {
+      "name": "quests",
+      "originalSHA256": "d5166317ef497f99926281d898a7851bf54564dc16e8c1d5186fdaed169c3767",
+      "pngBytes": 344267,
+      "pngSHA256": "d5166317ef497f99926281d898a7851bf54564dc16e8c1d5186fdaed169c3767",
+      "webpBytes": 162568,
+      "webpSHA256": "0b55ffd531d1501322ca3132e15bb66d2835db43ecd9dc279d404b519bc50316",
+      "width": 1206,
+      "height": 2622,
+      "decodedRGBAIdentical": true,
+      "copiedPNGByteIdentical": true,
+      "captureRecord": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "B926A818-071A-456C-9674-B032567C1601",
+        "deviceName": "InflectionGuidedUI-20261005-134511-29265-1",
+        "exportedFileName": "B4D243FA-9222-4835-B2B2-F7FF3D6AD27A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Quests \u2014 normal text_0_9E9AF57C-8D87-44F6-BD60-0FE7981D1915.png",
+        "timestamp": 1791234275.308
+      },
+      "png": "images/native-quests-2026-10-05.png",
+      "webp": "images/native-quests-2026-10-05.webp"
+    },
+    {
+      "name": "synthesis",
+      "originalSHA256": "0107c3460134fa19bf9e492558084ee1965fb4188f0e739de3f4d8fc88d967af",
+      "pngBytes": 264786,
+      "pngSHA256": "0107c3460134fa19bf9e492558084ee1965fb4188f0e739de3f4d8fc88d967af",
+      "webpBytes": 88366,
+      "webpSHA256": "6cf3f5cd272af40e7fdbc9c9f5157656fad476fd9c384cdceb489bb1649736b5",
+      "width": 1206,
+      "height": 2622,
+      "decodedRGBAIdentical": true,
+      "copiedPNGByteIdentical": true,
+      "captureRecord": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "B926A818-071A-456C-9674-B032567C1601",
+        "deviceName": "InflectionGuidedUI-20261005-134511-29265-1",
+        "exportedFileName": "9535CCD8-C36B-46F2-B1AF-C85639B156C1.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Synthesis \u2014 normal text_0_F3C9F4ED-53F3-49A1-B80C-3F2F7C1401DA.png",
+        "timestamp": 1791234285.634
+      },
+      "png": "images/native-synthesis-2026-10-05.png",
+      "webp": "images/native-synthesis-2026-10-05.webp"
+    },
+    {
+      "name": "identity",
+      "originalSHA256": "fcc0f84f306584db1ddf7a347bf13cd3bed84b5d173b1a1ef0e8975784b54415",
+      "pngBytes": 249301,
+      "pngSHA256": "fcc0f84f306584db1ddf7a347bf13cd3bed84b5d173b1a1ef0e8975784b54415",
+      "webpBytes": 74354,
+      "webpSHA256": "19e955f6dca0e129151f1ecfca24f138782260a68b13e87aa8771fcb66fc983d",
+      "width": 1206,
+      "height": 2622,
+      "decodedRGBAIdentical": true,
+      "copiedPNGByteIdentical": true,
+      "captureRecord": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "B926A818-071A-456C-9674-B032567C1601",
+        "deviceName": "InflectionGuidedUI-20261005-134511-29265-1",
+        "exportedFileName": "3675624D-63F2-4868-B466-C78FF8CA92BF.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Identity \u2014 normal text_0_A7C2982D-904F-412B-8A9F-DFDF8657AD43.png",
+        "timestamp": 1791234300.34
+      },
+      "png": "images/native-identity-2026-10-05.png",
+      "webp": "images/native-identity-2026-10-05.webp"
+    },
+    {
+      "name": "guided-plan",
+      "originalSHA256": "fed94c554b3db7cab45ffecd72e235bd51abe5798e290d043315c33748c7788e",
+      "pngBytes": 557420,
+      "pngSHA256": "fed94c554b3db7cab45ffecd72e235bd51abe5798e290d043315c33748c7788e",
+      "webpBytes": 313432,
+      "webpSHA256": "20ef9cf88a35f8f763b75ef780963a1c3ac894515ac9df93191c24a8b40d7f55",
+      "width": 1206,
+      "height": 2622,
+      "decodedRGBAIdentical": true,
+      "copiedPNGByteIdentical": true,
+      "captureRecord": {
+        "configurationName": "Test Scheme Action",
+        "deviceId": "5EFF9755-82D0-411D-AD47-5A04D1E19AD7",
+        "deviceName": "InflectionGuidedLayoutFinal-20261005",
+        "exportedFileName": "A5ED000A-0664-4F6B-A999-8E847F68026A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Guided reset \u2014 explicit plan committed_0_9D7F7C34-2815-4EC7-ACE7-9D0F0EE95935.png",
+        "timestamp": 1791233736.541
+      },
+      "png": "images/native-guided-plan-2026-10-05.png",
+      "webp": "images/native-guided-plan-2026-10-05.webp"
+    }
+  ]
+}
