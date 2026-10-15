@@ -24,7 +24,7 @@ Header, hero, availability FAQ and final-section CTAs open Apple’s public beta
 https://testflight.apple.com/join/kCAhUy1C
 ```
 
-Visitors open the link on an iPhone, install TestFlight if needed and follow Apple’s invitation. The app requires iOS 26 or later. Contact/support email links remain separate and do not enroll a tester. No tester groups, membership, invitation settings, products or prices are changed by publishing these links. Only use a public App Store download CTA after a fresh check proves the actual listing is live and the intended app release is available:
+Visitors open the link on an iPhone, install TestFlight if needed and follow Apple’s invitation. The app requires iOS 26 or later. Contact/support email links remain separate and do not enroll a tester. During October 15 signup validation, Apple’s public page initially refused new testers even though the link was enabled. The approved **2026.10.13 (6)** build was manually activated with **Notify Testers**, after which the public page displayed **View Inflection Point Beta** and installation steps. The existing External Beta group, zero tester membership and 100-tester public-link limit were preserved; no addresses were added, and no products or prices changed. This verifies the invitation page, not an actual device enrollment or installation. Only use a public App Store download CTA after a fresh check proves the actual listing is live and the intended app release is available:
 
 ```text
 https://apps.apple.com/app/id6759310530
