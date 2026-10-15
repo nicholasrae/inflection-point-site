@@ -16,9 +16,15 @@ The initial redesign was published at `5963424` on September 30, 2026. Additiona
 
 ## Launch and product copy
 
-The App Store release is in preparation. The October 5, 2026 audit found the public US listing returned 404 and Apple's lookup returned no result. Release readiness includes app validation and provider/privacy review; do not imply Apple approval is the only remaining step. The pending native version is not advertised as publicly released.
+The iPhone beta is available through the public TestFlight signup link below. Apple approved **2026.10.13 (6)** for external beta testing; live App Store Connect approval and the External Beta group’s public link were verified on October 15, 2026. This is separate from public App Store release, physical-device QA and purchase validation. The App Store release remains in preparation. The October 5, 2026 audit found the public US listing returned 404 and Apple's lookup returned no result; those listing observations retain their original date. Release readiness includes app validation and provider/privacy review; do not imply Apple approval is the only remaining step.
 
-Launch CTAs open an email request to the developer. The visitor must send it to request a launch update; no automatic subscription or notification is created by clicking. Change CTAs to download links only after a fresh check proves the actual listing is live and the intended app release is available:
+Header, hero, availability FAQ and final-section CTAs open Apple’s public beta invitation:
+
+```text
+https://testflight.apple.com/join/kCAhUy1C
+```
+
+Visitors open the link on an iPhone, install TestFlight if needed and follow Apple’s invitation. The app requires iOS 26 or later. Contact/support email links remain separate and do not enroll a tester. No tester groups, membership, invitation settings, products or prices are changed by publishing these links. Only use a public App Store download CTA after a fresh check proves the actual listing is live and the intended app release is available:
 
 ```text
 https://apps.apple.com/app/id6759310530
