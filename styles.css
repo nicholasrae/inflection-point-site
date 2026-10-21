@@ -543,6 +543,43 @@ h3 {
   color: var(--muted);
   margin-top: 8px;
 }
+.tablet-intro {
+  max-width: 660px;
+  margin-top: 72px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.tablet-intro h3 {
+  margin-top: 14px;
+  font-size: 1.2rem;
+}
+.tablet-intro > p:last-child {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.tablet-preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 32px;
+}
+.tablet-preview-image {
+  padding: 24px;
+}
+.tablet-preview-image .screenshot-link {
+  width: 100%;
+  max-width: 370px;
+}
+.tablet-preview-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #353531;
+  border-radius: 16px;
+}
+@media (max-width: 760px) {
+  .tablet-preview-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 .access-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -599,6 +636,9 @@ h3 {
   font-size: 0.73rem;
   max-width: 430px;
   line-height: 1.7;
+}
+.access-note + .access-note {
+  margin-top: 14px;
 }
 .lifetime-card {
   border-color: #847036;
@@ -964,8 +1004,11 @@ h3 {
   .preview-image {
     padding: 25px 20px 0;
   }
-  .preview-image img {
+  .preview-image:not(.tablet-preview-image) img {
     width: 205px;
+  }
+  .tablet-preview-image {
+    padding: 20px;
   }
   .preview-item figcaption {
     padding-top: 19px;
@@ -1069,7 +1112,7 @@ h3 {
   .actions {
     gap: 6px;
   }
-  .preview-image img {
+  .preview-image:not(.tablet-preview-image) img {
     width: 185px;
   }
   .access-card {

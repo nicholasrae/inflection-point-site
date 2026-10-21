@@ -12,7 +12,7 @@
     <title>Inflection Point Privacy Policy</title>
     <meta
       name="description"
-      content="Privacy Policy for Inflection Point: local journals, on-device debriefs, system Image Playground avatars, purchases and your choices."
+      content="Privacy Policy for Inflection Point: local journals, on-device debriefs, system avatars, local diagnostics, purchases and your choices."
     />
     <link rel="canonical" href="https://inflectionpoint.me/privacy.html" />
     <link
@@ -28,16 +28,19 @@
     <main id="main-content" class="shell" tabindex="-1">
       <div class="eyebrow">Inflection Point</div>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective and last updated: October 5, 2026</p>
+      <p class="meta">Effective and last updated: October 21, 2026</p>
       <aside class="policy-notice" aria-label="Release scope">
         <p>
-          This page describes the 2026.10.5 native version in testing and
-          distinguishes it from earlier Expo versions and native betas. Public
-          App Store release remains in preparation; describing these features
-          here does not mean the app is publicly available.
+          This page describes native TestFlight build 2026.10.20 (11), for
+          iPhone and iPad running iOS 26 or iPadOS 26 or later, and distinguishes
+          it from earlier Expo versions and native betas. Optional Apple
+          Intelligence features have additional compatibility requirements.
+          Public App Store release remains in preparation; TestFlight approval
+          does not mean the app is publicly available on the App Store.
         </p>
         <p>
           Previous policies:
+          <a href="/privacy-2026-10-05.html">October 5, 2026</a> ·
           <a href="/privacy-2026-09-30.html">September 30, 2026</a> ·
           <a href="/privacy-2026-04-26.html">April 26, 2026</a>
         </p>
@@ -63,15 +66,14 @@
           checks, evening reviews and links to the goals, projects and quests
           created from a reviewed plan. These records are part of your local
           journal. The app also stores settings, reminder preferences and
-          purchase access, and preserves historical preview and usage records. The planned
-          release has no free trial, ongoing free tier or subscription. There
-          is no separate Inflection Point account or app-managed cloud journal
-          sync.
+          purchase access, and preserves historical preview and usage records.
+          Lifetime access has no free trial, ongoing free tier or subscription.
+          There is no separate Inflection Point account or app-managed cloud
+          journal sync.
         </p>
         <p>
           You may choose a profile photo or take an avatar photo using the
-          camera. The planned StoreKit release copies the chosen image into
-          app-owned local storage. Camera access is requested when you choose to
+          camera. Build 11 copies the chosen image into app-owned local storage. Camera access is requested when you choose to
           take a photo. The app does not automatically pass your saved avatar
           or chosen profile photo to Image Playground. You may separately
           choose a personal photo inside Apple’s system sheet. The app does not
@@ -79,28 +81,28 @@
         </p>
         <h2>2. Optional AI: daily debriefs and avatars</h2>
         <p>
-          Manual reflection does not send the entry to an AI generator. In the
-          planned native release, an optional daily debrief uses Apple’s
-          on-device Foundation Models framework. Your reflection, selected wins,
+          Manual reflection does not send the entry to an AI generator. In
+          build 11, an optional daily debrief uses Apple’s on-device Foundation
+          Models framework. Your reflection, selected wins,
           violated constraints and relevant identity context are processed on
-          your iPhone. The app does not upload that debrief input for generation
+          your device. The app does not upload that debrief input for generation
           or fall back to a cloud debrief service. Saving a debrief makes the
           result part of your local journal.
         </p>
         <p>
-          On-device debriefs require an Apple Intelligence-eligible iPhone,
-          supported language and region, Apple Intelligence enabled and the
+          On-device debriefs require an Apple Intelligence-eligible iPhone or
+          iPad, supported language and region, Apple Intelligence enabled and the
           model downloaded and ready. When the model is unavailable or cannot
           complete a request, you can use manual Quick Log instead. See
           <a href="https://support.apple.com/en-us/121115"
             >Apple’s availability information</a
           >. This does not mean all Apple Intelligence features run on device,
-          or that every iPhone can generate debriefs.
+          or that every supported iPhone or iPad can generate debriefs.
         </p>
         <p>
           <strong>Optional avatars use Apple’s system Image Playground.</strong>
-          The planned native release first asks you to choose the text to share
-          and agree to the explanation. This can include selected active traits,
+          Build 11 first asks you to choose the text to share and agree to the
+          explanation. This can include selected active traits,
           an optional character name and up to two vision descriptions. The app
           passes that selected text to Apple’s sheet, not to Rork, and does not
           supply a source photo. You can edit the description or explicitly
@@ -110,8 +112,9 @@
         <p>
           This app offers Apple’s Illustration, Animation and Sketch styles,
           without an external-provider style. Apple controls the system
-          generation experience and processing. On iOS 27, Image Playground
-          uses Private Cloud Compute, Apple’s server-based image models; this
+          generation experience and processing. On iOS 27 and iPadOS 27,
+          Image Playground uses Private Cloud Compute, Apple’s server-based
+          image models; this
           is separate from the on-device daily debrief. Read
           <a href="https://www.apple.com/legal/privacy/data/en/intelligence-engine/"
             >Apple’s Intelligence privacy information</a
@@ -151,9 +154,18 @@
         <p>
           Apple processes payment and maintains Apple purchase records. The app
           receives purchase/access information, not your full payment-card
-          details. The planned StoreKit release uses Apple StoreKit directly and
-          keeps a local ownership cache. It does not contact RevenueCat or
-          bundle a third-party purchase analytics SDK.
+          details. Build 11 uses Apple StoreKit directly and keeps a local
+          ownership cache. It does not contact RevenueCat or bundle a
+          third-party purchase analytics SDK.
+        </p>
+        <p>
+          TestFlight purchases use Apple’s test environment and are not charged.
+          A test purchase is not a production App Store lifetime purchase and
+          does not carry over as one to the public release. This is separate
+          from eligible existing lifetime purchases and preserved historical
+          access grants. See <a href="https://testflight.apple.com/#installing-testing"
+            >Apple’s TestFlight information</a
+          >.
         </p>
         <p>
           Some earlier Expo versions and native beta builds use RevenueCat to
@@ -176,24 +188,82 @@
           Earlier Expo versions bundled the Rork toolkit SDK, which could send
           generation and app-lifecycle events to PostHog when enabled by the
           build configuration. This audit has not confirmed whether that
-          conditional analytics path was enabled in a distributed beta. The
-          planned StoreKit release does not include that SDK
-          analytics path, advertising identifiers or a third-party crash/session
-          analytics SDK. Apple may collect platform diagnostics under your Apple
-          privacy settings.
+          conditional analytics path was enabled in a distributed beta.
+          Build 11 does not include that SDK analytics path, advertising
+          identifiers or a third-party crash/session analytics SDK. Apple may
+          collect platform diagnostics under your Apple privacy settings.
         </p>
-        <h2>4. Reminders, backups and exports</h2>
+        <p>
+          <strong>TestFlight platform reporting:</strong> Apple automatically
+          collects beta crash logs and usage information and shares them with
+          the developer, independently of the app’s local diagnostics and
+          optional usage setting. This can include installation status, build,
+          sessions, crashes and device/OS details. Names and email addresses
+          are not visible for public-link-only invitations unless you choose
+          to provide them with feedback. Apple also receives feedback you
+          submit through TestFlight. We use this beta information to improve
+          the app and do not share it with third parties. See
+          <a href="https://www.apple.com/legal/privacy/data/en/test-flight/"
+            >Apple’s TestFlight privacy information</a
+          > for the full data fields, controls and Apple’s retention practices.
+        </p>
+        <h2>4. Local diagnostics and optional usage counts</h2>
+        <p>
+          The app keeps bounded local counts of save and purchase outcomes,
+          including failures, cancellations and pending purchases. When Apple’s
+          MetricKit supplies diagnostic reports, the app retains only fixed
+          report categories, such as crash or hang, without the underlying call
+          stacks, signposts or report payloads. These are counts of received
+          diagnostic reports, not a complete count of device crashes. Reliability
+          diagnostics do not change your journal or purchase access and are not
+          uploaded automatically.
+        </p>
+        <p>
+          Usage recording is off by default. If you enable Record usage counts
+          in Settings → Diagnostics &amp; privacy, the app counts activations,
+          setup completion, completed quests and first daily Synthesis saves.
+          Turning it off stops recording and clears the stored usage counts.
+          If a preference cannot be saved, the app displays an error; retry
+          before relying on it after a restart. Clear diagnostic data separately
+          clears reliability and usage counters, removes the prepared report and
+          turns usage recording off. These controls do not change your journal
+          or purchase ownership.
+        </p>
+        <p>
+          You can preview a diagnostic report and explicitly choose whether and
+          where to share it. It contains fixed outcome counts, optional usage
+          counts, the exporting app’s version/build and numeric operating-system
+          version. Counters are cumulative since they were cleared and may span
+          earlier app versions. Reports contain no journal text, names, goals,
+          traits, scores, images, AI prompts or results, receipts, transaction
+          identifiers, device identifiers or raw error messages. Previewing does
+          not transmit the report. If you choose to send it to support, we
+          receive the report along with the contact information and message
+          supplied by your chosen email or sharing service. Copies already
+          shared remain with their recipients.
+        </p>
+        <p>
+          Review-request timing is stored locally, separately from usage
+          recording and diagnostic reports. After sustained use and successful
+          daily Synthesis saves, the app may ask Apple to display its standard
+          rating/review prompt. Eligibility does not use your journal content,
+          mood or scores. Apple controls whether the prompt appears, and the
+          app does not learn the rating you submit. A Settings link lets you
+          choose to write an App Store review; beta feedback belongs in
+          TestFlight.
+        </p>
+        <h2>5. Reminders, backups and exports</h2>
         <p>
           Optional morning, evening and daytime pattern-check reminders use
           Apple’s local notifications after permission; the app does not send
           journal text to a remote push-notification service. You can choose
           pattern-check times and change reminders in the app, or change
-          notification permission in iOS Settings.
+          notification permission in your device’s Settings.
         </p>
         <p>
           Apple device backups may include app data, depending on your settings.
           That is a platform backup, separate from an app-managed cloud sync or
-          the planned StoreKit release’s local recovery backup. See
+          build 11’s local recovery backup. See
           <a href="https://support.apple.com/en-us/108770"
             >Apple’s backup information</a
           >.
@@ -202,7 +272,7 @@
           Earlier Expo versions provide a partial JSON export containing
           identity, quests and daily logs; it is not a complete backup of all
           collections. The earlier native beta already includes journey export
-          during full access. The planned StoreKit release provides complete
+          during full access. Build 11 provides complete
           JSON export, including saved guided-reset progress, reflections and
           applied-plan links, the rest of the journal and an embedded avatar when
           present. These journal records are also included in local recovery
@@ -213,17 +283,17 @@
           journey after confirmation. Copies you export leave app-controlled
           storage and remain wherever you save or share them.
         </p>
-        <h2>5. Retention, reset and security</h2>
+        <h2>6. Retention, reset and security</h2>
         <p>
           App content is stored in the device’s app sandbox. Native saves use
-          iOS file protection and keep a previous valid local backup. These
+          Apple file protection and keep a previous valid local backup. These
           controls are not an end-to-end encrypted cloud journal or a guarantee
           of complete security.
         </p>
         <p>
           <strong>Earlier Expo history:</strong> the free-tier retention logic
           can permanently remove daily logs older than its history window. Do
-          not rely on the planned release’s saved-history promise for an earlier
+          not rely on build 11’s saved-history behavior for an earlier
           installed Expo version, or assume it can recover entries already
           deleted.
         </p>
@@ -232,7 +302,7 @@
           window limits visibility while retaining older saved entries.
         </p>
         <p>
-          <strong>Planned StoreKit history:</strong> lifetime access includes the
+          <strong>Build 11 history:</strong> lifetime access includes the
           full saved history, with no free-tier visibility window. The migration
           reads the legacy journal and retains the original for recovery until
           Reset all data. An unreadable journal is preserved for
@@ -240,13 +310,17 @@
           validation remains a release check.
         </p>
         <p>
-          In the planned StoreKit release, Reset all data removes the local
-          journey, including guided-reset responses, reviews and applied-plan
+          Build 11 preserves open editor drafts in memory during journal
+          recovery so you can explicitly retry saving after recovery succeeds.
+          An unsaved draft is not a saved journal entry; this is not a promise
+          that a draft survives force-quitting, a crash or device restart.
+        </p>
+        <p>
+          In build 11, Reset all data removes the local journey, including guided-reset responses, reviews and applied-plan
           records, plus app-owned recovery copies, backups, avatars and local
           export files. It keeps purchase ownership and historical preview/usage
-          records. Removing a displayed avatar can leave older app-owned image files until
-          reset.
-          Reset does not delete copies exported elsewhere, Apple backups or
+          records. Removing a displayed avatar can leave older app-owned image
+          files until reset. Reset does not delete copies exported elsewhere, Apple backups or
           provider records. Earlier Expo reset behavior differs.
         </p>
         <p>
@@ -255,7 +329,7 @@
           deadline is promised here. Services may process information outside
           your country.
         </p>
-        <h2>6. This website and support</h2>
+        <h2>7. This website and support</h2>
         <p>
           This static website is hosted on GitHub Pages. Hosting providers may
           process request information such as IP addresses for operation and
@@ -274,12 +348,13 @@
           records under our control. External links and email services have
           their own practices.
         </p>
-        <h2>7. Your choices and requests</h2>
+        <h2>8. Your choices and requests</h2>
         <p>
           You can choose manual reflection, edit supported content, control
-          reminders, use the export available in your version and reset local
-          data. Saved daily logs do not have an individual deletion control;
-          available edits depend on the version. Store and share exports
+          reminders, turn optional usage counts on or off, preview or clear
+          diagnostic data, use the export available in your version and reset
+          local data. Saved daily logs do not have an individual deletion
+          control; available edits depend on the version. Store and share exports
           privately.
         </p>
         <p>
