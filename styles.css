@@ -558,6 +558,14 @@ h3 {
   color: var(--muted);
   font-size: 0.9rem;
 }
+.duo-intro {
+  scroll-margin-top: var(--anchor-offset);
+}
+.duo-intro > p:not(.eyebrow) {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 .tablet-preview-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 32px;

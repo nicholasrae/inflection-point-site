@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "preparedAtUTC": "2026-10-22T17:22:13.282923+00:00",
+  "scope": "Existing genuine simulator app captures reused without image-content edits. PNG bytes are unchanged; WebP pixels decode identically.",
+  "assets": [
+    {
+      "screen": "saved-check-in",
+      "label": "Saved daytime reflection",
+      "png": "images/native-iphone-duo-build12-daytime-reflection-20261022.png",
+      "webp": "images/native-iphone-duo-build12-daytime-reflection-20261022.webp",
+      "width": 1398,
+      "height": 2034,
+      "pngMode": "RGB",
+      "webpDecodedMode": "RGB",
+      "pngBytes": 258375,
+      "webpBytes": 78876,
+      "pngSHA256": "5aedc7bb8921874aec096b054e68931748e051e11181ce50f9de4c231d7d9c6c",
+      "webpSHA256": "22055a0b2f8f43269fa5cf4594abf51338248139e8b62ed40862e73ae7d9c39d",
+      "originalPNGBytesPreserved": true,
+      "losslessWebP": true,
+      "decodedRGBAPixelsIdentical": true,
+      "decodedRGBASHA256": "bbcdb29ba2101100a61c106db2baf3c05fcedd09b9c6584daa998ee8e48ed611",
+      "capturedAtUTC": "2026-10-22T02:12:51.080000+00:00",
+      "captureMarketingVersion": "2026.10.21",
+      "captureBuildNumber": "12",
+      "captureSource": "attempt-5/source",
+      "uploadedBuildSource": "attempt-9/source",
+      "device": "iPhone Duo simulator",
+      "runtime": "iOS27.1 (24A94232)",
+      "sampleData": "Fictional Taylor Quinn journal, scripted UI-only access"
+    },
+    {
+      "screen": "saved-guided-plan",
+      "label": "Saved guided plan",
+      "png": "images/native-iphone-duo-build12-saved-plan-20261022.png",
+      "webp": "images/native-iphone-duo-build12-saved-plan-20261022.webp",
+      "width": 1398,
+      "height": 2034,
+      "pngMode": "RGB",
+      "webpDecodedMode": "RGB",
+      "pngBytes": 291481,
+      "webpBytes": 80806,
+      "pngSHA256": "b72929a4c61133cf25ba78d81d215c2e8320fddcf036fa30b2ee408c9cac2e9f",
+      "webpSHA256": "60ae1ff5d9adbfe060d79097672175e844109c942c272e73e2b93390e9a3d8c5",
+      "originalPNGBytesPreserved": true,
+      "losslessWebP": true,
+      "decodedRGBAPixelsIdentical": true,
+      "decodedRGBASHA256": "09191ce4952d545b83260dde0725d9bda8fe86f7e7a0de821c663e6242ff0f0e",
+      "capturedAtUTC": "2026-10-22T02:17:33.563000+00:00",
+      "captureMarketingVersion": "2026.10.21",
+      "captureBuildNumber": "12",
+      "captureSource": "attempt-5/source",
+      "uploadedBuildSource": "attempt-9/source",
+      "device": "iPhone Duo simulator",
+      "runtime": "iOS27.1 (24A94232)",
+      "sampleData": "Fictional Taylor Quinn journal, scripted UI-only access"
+    }
+  ],
+  "evidence": [
+    {
+      "basename": "build12-duo-provenance.json",
+      "sha256": "518ccf09a53d97093fdaf4b518fe1803701b72ebb25a002a686c752a88d51106"
+    },
+    {
+      "basename": "build12-source5-to-uploaded-source9-capture-proof.json",
+      "sha256": "e0d6f56470847ae2713803acc642f730e674804552850fc629a81f7dc71babfd"
+    }
+  ],
+  "sourceLinkage": {
+    "captureMarketingVersion": "2026.10.21",
+    "captureBuildNumber": "12",
+    "uploadedMarketingVersion": "2026.10.21",
+    "uploadedBuildNumber": "12",
+    "comparedAppCoreResourcesScriptConfigFiles": 49,
+    "onlyRawSourceDifference": "IP_NATIVE_UI_TESTS clock-control appearance, inactive in these guided captures",
+    "guidedRuntimeBranchEquivalent": true
+  },
+  "limits": [
+    "Local Debug simulator captures with fictional Taylor Quinn journal data and scripted UI-only access.",
+    "These are not captures of an Apple-distributed executable or a physical device.",
+    "Screenshots do not verify real purchases, restore, receipt ownership, provider behavior, full release readiness or complete test-suite success.",
+    "No new app build, run, test, simulator action or capture was performed during this asset preparation."
+  ]
+}
