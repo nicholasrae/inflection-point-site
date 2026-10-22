@@ -36,6 +36,14 @@ The guided reset moves through eight morning prompts, daytime pattern check-ins 
 
 The hero shows Dashboard, the reset section shows a saved guided plan, and the four-screen iPhone gallery follows Dashboard, Quests, Synthesis and Identity. A second gallery shows native iPad layouts. These are genuine simulator captures from the frozen uploaded build 11 source with fictional sample data and scripted test-only access. They do not establish execution of the Apple-distributed binary, physical-device behavior, real purchases or AI generation. Original PNGs and lossless WebP alternatives are linked at full size; no crops, resizing, retouching or generated UI are used. See `screenshot-provenance-20261021.json` for exact source, device and asset hashes. The October 5 and September captures and their manifests remain historical. The seven current PNGs total 2,396,186 bytes; lossless WebP totals 883,932 bytes (63.1% less). Decoded RGBA pixels match every original.
 
+### iPhone Duo Quests and Synthesis promo
+
+The Duo section adds the reviewed 10-second Quests/Synthesis film and two genuine unfolded **2026.10.22 (13)** simulator captures. Native video controls start playback only on request; `preload="none"` avoids downloading the film on page load. The silent film uses separate simulator stills composited into folding footage and is labeled and credited accordingly. It does not demonstrate Inflection Point running continuously on a physical device or prove folding, caret or draft continuity. The current four tabs and lifetime-only policy are unchanged.
+
+Build 13 has been submitted for external TestFlight review. Submission remains separate from external availability and public App Store approval. The FAQ explains that unsaved drafts stay in memory and can be lost on termination. Build 12 guided-reset captures and their original provenance remain intact below the new preview; build 11 iPhone/iPad captures remain unchanged. See `promo-provenance-20261022-build13.json` for media hashes, version and capture scope. Full source-footage provenance and the local creative-review record remain in the owner's release artifacts; no reuse license or endorsement is asserted by this page.
+
+Tests remain stopped for this website-only change. Media inspection and browser preview checks are separate from app tests, physical-device QA and verified commerce. The existing hourly build 13 activity monitor remains active; publication does not change Apple distribution settings.
+
 The optional daily AI debrief uses Apple’s on-device Foundation Models on eligible, enabled, supported and model-ready iPhones and iPads, with Quick Log as its fallback and no cloud debrief fallback. Optional avatars open Apple’s system Image Playground after agreement to share selected active traits, optional name and up to two vision descriptions. The app offers only Illustration, Animation and Sketch styles, with no external-provider style and no source photo supplied. Apple controls processing, network requirements and system usage limits; its iOS 27/iPadOS 27 image models use Private Cloud Compute. Photo/camera alternatives remain. Do not describe avatars as offline or unlimited or imply all supported devices have AI features. Screenshots do not exercise or establish system image generation.
 
 TestFlight purchase tests use Apple’s sandbox, are free of charge, and do not carry over as production App Store purchases. Existing eligible lifetime ownership and preserved historical paid grants remain separate. Planned launch pricing remains US$14.99 once, no trial, free tier or subscription. This website does not change app access, products or prices.
@@ -49,6 +57,7 @@ The October 21 privacy update describes bounded local reliability counters, opti
 - `privacy-2026-10-05.html`, `terms-2026-10-05.html`, `privacy-2026-09-30.html`, `terms-2026-09-30.html`, `privacy-2026-04-26.html`, `terms-2026-04-26.html`: previous policies, marked archival and excluded from indexing.
 - `404.html`: branded missing-page navigation with external CSS.
 - `images/`: app captures and versioned branding assets. Current October 5 icons derive from the native 1024×1024 amber/ivory icon: 32×32 favicon, 128×128 brand and 180×180 touch icon. The social card remains 1200×630. Preserve earlier assets as historical files; see [icon provenance](BRANDING-20261005.md).
+- `videos/`: the reviewed build 13 Duo promo, served from the same origin without an external player or tracking script.
 - `_design/social-card.html`: editable source for the current social card, using bundled fonts and the versioned native icon. Render locally at 1200×630 after fonts and images finish loading. The underscore-prefixed source directory is excluded by the current GitHub Pages/Jekyll build.
 - `fonts/`: self-hosted Manrope and Barlow Condensed, with their SIL Open Font License files. Retain those notices.
 - `robots.txt`, `sitemap.xml`, `CNAME`: indexing and GitHub Pages configuration.
@@ -69,9 +78,9 @@ Current legal copy corrects known behavior claims and distinguishes earlier Expo
 
 ## Security metadata maintenance
 
-All ten HTML pages place `no-referrer` and CSP metadata immediately after charset. CSP permits same-origin CSS/images/fonts and blocks connections, forms, frames, objects and base-URL changes. Nine pages prohibit scripts; the homepage permits only its exact JSON-LD hash. No inline style exception or external runtime script is needed.
+All ten HTML pages place `no-referrer` and CSP metadata immediately after charset. CSP permits same-origin CSS/images/fonts and blocks connections, forms, frames, objects and base-URL changes. The homepage additionally permits same-origin video via `media-src 'self'`. Nine pages prohibit scripts; the homepage permits only its exact JSON-LD hash. No inline style exception or external runtime script is needed.
 
-The homepage and 404 page use `styles.css?v=20261021-build11`; legal pages retain `legal.css?v=20260930-native` because that stylesheet is unchanged. Advance the query token when styles change so returning visitors request the current CSS; retain the correct `styles.css` or `legal.css` file for each page. Resource checks should resolve the URL pathname independently of its query string.
+The homepage uses `styles.css?v=20261022-duo-promo13`; the 404 page retains its existing cache token because its presentation is unchanged. Legal pages retain `legal.css?v=20260930-native` because that stylesheet is unchanged. Advance the homepage query token when its styles change so returning visitors request the current CSS; retain the correct `styles.css` or `legal.css` file for each page. Resource checks should resolve the URL pathname independently of its query string.
 
 Changing JSON-LD bytes, including whitespace, requires replacing the homepage `script-src` digest. Calculate it from the exact body:
 
