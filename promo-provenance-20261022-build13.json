@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "preparedAtUTC": "2026-10-22T21:39:01.008867+00:00",
+  "captureVersion": "2026.10.22",
+  "captureBuild": "13",
+  "device": "iPhone Duo simulator",
+  "runtime": "iOS 27.1",
+  "captureSource": "Normal simulator build of the sealed uploaded build 13 source",
+  "sampleData": "Fictional copied sample journal with capture-only fixture access; no real Apple purchase implied",
+  "video": {
+    "path": "videos/inflection-point-duo-build13-20261022.mp4",
+    "sha256": "54832804dfa594216037bbbc81abb68c95bccfbb44d1e5e2a3196f72a130e6f6",
+    "bytes": 7619504,
+    "durationSeconds": 10,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 300,
+    "audio": false,
+    "byteIdenticalToReviewedLocalFilm": true,
+    "screenReplacement": true,
+    "foldingFootageOrigin": "https://x.com/tim_cook/status/2111056812212687246",
+    "reference": "https://x.com/hieudinh_/status/2111365618129887570",
+    "sourceFootageReusePermissionVerified": false,
+    "endorsementAsserted": false
+  },
+  "images": [
+    {
+      "role": "Genuine native Quests unfolded screenshot",
+      "sitePNG": "images/native-iphone-duo-build13-quests-unfolded-20261022.png",
+      "siteWebP": "images/native-iphone-duo-build13-quests-unfolded-20261022.webp",
+      "width": 2853,
+      "height": 2007,
+      "pngBytes": 486832,
+      "webpBytes": 115698,
+      "pngSHA256": "46fedde337016d0466b65f7a3f80bdf62d2c497c338e17206a180ff6c1f02f35",
+      "webpSHA256": "1bc95c9bf7a4e133fbe54b1aa5daab3f0426289ddf5bfe541c48ceed986a542c",
+      "PNGBytesIdenticalToReviewedOriginal": true,
+      "WebPLossless": true,
+      "decodedRGBAPixelsIdentical": true,
+      "decodedRGBASHA256": "7a623dba9d6752567af49434ef29ea107276edf971fd2f63e448f4b141441283",
+      "iccProfilePreservedExactly": true,
+      "resizedOrRepainted": false
+    },
+    {
+      "role": "Genuine native Synthesis unfolded screenshot",
+      "sitePNG": "images/native-iphone-duo-build13-synthesis-unfolded-20261022.png",
+      "siteWebP": "images/native-iphone-duo-build13-synthesis-unfolded-20261022.webp",
+      "width": 2853,
+      "height": 2007,
+      "pngBytes": 389919,
+      "webpBytes": 94862,
+      "pngSHA256": "fa3e4456c7f65e4e6f76a177662f419005623e677762ab96fc1dc41fcf1b43a6",
+      "webpSHA256": "819c8246dc1296127ecf1b606f37b79ffef9fd8d4881ed176d16a9a871bdb9d9",
+      "PNGBytesIdenticalToReviewedOriginal": true,
+      "WebPLossless": true,
+      "decodedRGBAPixelsIdentical": true,
+      "decodedRGBASHA256": "926b935d8c8f7b97a178618e8774f32c2875df91bda79bf2542f2f0f273ad775",
+      "iccProfilePreservedExactly": true,
+      "resizedOrRepainted": false
+    },
+    {
+      "role": "Reviewed Quests final-frame poster for combined film",
+      "sitePNG": "images/iphone-duo-promo-build13-20261022.png",
+      "siteWebP": "images/iphone-duo-promo-build13-20261022.webp",
+      "width": 1920,
+      "height": 1080,
+      "pngBytes": 1062700,
+      "webpBytes": 519716,
+      "pngSHA256": "161867ea6499949ff763a4b5d511774a119f55aaf8c9dd6364b205cb1db7f709",
+      "webpSHA256": "824824fbd8409dfbd510907a4a96b649a3378fa7e4ff3e74417e4dedc1eee1ec",
+      "PNGBytesIdenticalToReviewedOriginal": true,
+      "WebPLossless": true,
+      "decodedRGBAPixelsIdentical": true,
+      "decodedRGBASHA256": "8b41cfa9004eee510f4d7eb99520af0eb890691f64727869a94d2a207f48de69",
+      "iccProfilePreservedExactly": true,
+      "resizedOrRepainted": false
+    }
+  ],
+  "boundaries": [
+    "The film is a promotional screen-replacement composite made from separate genuine simulator captures.",
+    "It does not prove continuous physical-device execution, folding/caret/draft continuity, Apple purchase/restore, automated test outcomes, or release readiness.",
+    "In-memory drafts require an explicit save and are not guaranteed to survive termination.",
+    "Build 13 submission is separate from external TestFlight approval and public App Store availability."
+  ],
+  "localEvidenceHashes": [
+    {
+      "basename": "capture-manifest.json",
+      "sha256": "4d64c3558c220846129d18573ce6009b44e7eefe9ee4923d64ebdc4d0c0e00f7"
+    },
+    {
+      "basename": "capture-fixture.json",
+      "sha256": "8c5d00a3935388b551843a1122edccbf97ed38ed9be17443c6233b2565de0eca"
+    },
+    {
+      "basename": "final-render-proof.json",
+      "sha256": "5db2ef0e404ddf2eb3b0d08b7933b3421a7b5437f61422b69119267ca23e8586"
+    },
+    {
+      "basename": "source-provenance.json",
+      "sha256": "d881006b2a0a65b8f5ae55800407ee8e828037441acb37552e500631ab6c32c4"
+    }
+  ]
+}
