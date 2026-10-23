@@ -28,18 +28,21 @@
     <main id="main-content" class="shell" tabindex="-1">
       <div class="eyebrow">Inflection Point</div>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective and last updated: October 21, 2026</p>
+      <p class="meta">Effective and last updated: October 23, 2026</p>
       <aside class="policy-notice" aria-label="Release scope">
         <p>
-          This page describes native TestFlight build 2026.10.20 (11), for
-          iPhone and iPad running iOS 26 or iPadOS 26 or later, and distinguishes
-          it from earlier Expo versions and native betas. Optional Apple
+          This page describes native release candidate 2026.10.23 (14), for
+          iPhone and iPad running iOS 26 or iPadOS 26 or later, and the current
+          external TestFlight beta, 2026.10.22 (13). It distinguishes these
+          versions from earlier Expo versions and native betas. Optional Apple
           Intelligence features have additional compatibility requirements.
-          Public App Store release remains in preparation; TestFlight approval
-          does not mean the app is publicly available on the App Store.
+          Build 14 and Lifetime Access are waiting for App Review for the
+          public App Store release. The app is not yet publicly available;
+          external TestFlight approval is separate from public App Review.
         </p>
         <p>
           Previous policies:
+          <a href="/privacy-2026-10-21.html">October 21, 2026</a> ·
           <a href="/privacy-2026-10-05.html">October 5, 2026</a> ·
           <a href="/privacy-2026-09-30.html">September 30, 2026</a> ·
           <a href="/privacy-2026-04-26.html">April 26, 2026</a>
@@ -73,7 +76,7 @@
         </p>
         <p>
           You may choose a profile photo or take an avatar photo using the
-          camera. Build 11 copies the chosen image into app-owned local storage. Camera access is requested when you choose to
+          camera. Build 14 copies the chosen image into app-owned local storage. Camera access is requested when you choose to
           take a photo. The app does not automatically pass your saved avatar
           or chosen profile photo to Image Playground. You may separately
           choose a personal photo inside Apple’s system sheet. The app does not
@@ -82,7 +85,7 @@
         <h2>2. Optional AI: daily debriefs and avatars</h2>
         <p>
           Manual reflection does not send the entry to an AI generator. In
-          build 11, an optional daily debrief uses Apple’s on-device Foundation
+          build 14, an optional daily debrief uses Apple’s on-device Foundation
           Models framework. Your reflection, selected wins,
           violated constraints and relevant identity context are processed on
           your device. The app does not upload that debrief input for generation
@@ -101,7 +104,7 @@
         </p>
         <p>
           <strong>Optional avatars use Apple’s system Image Playground.</strong>
-          Build 11 first asks you to choose the text to share and agree to the
+          Build 14 first asks you to choose the text to share and agree to the
           explanation. This can include selected active traits,
           an optional character name and up to two vision descriptions. The app
           passes that selected text to Apple’s sheet, not to Rork, and does not
@@ -154,7 +157,12 @@
         <p>
           Apple processes payment and maintains Apple purchase records. The app
           receives purchase/access information, not your full payment-card
-          details. Build 11 uses Apple StoreKit directly and keeps a local
+          details. For the pending public release, the app will be free to
+          download. One non-consumable Lifetime Access in-app purchase is
+          required before onboarding or use of the core protocol. The configured
+          US price is US$14.99; Apple shows the local price before purchase.
+          There is no trial, free protocol tier or recurring subscription.
+          Build 14 uses Apple StoreKit directly and keeps a local
           ownership cache. It does not contact RevenueCat or bundle a
           third-party purchase analytics SDK.
         </p>
@@ -189,7 +197,7 @@
           generation and app-lifecycle events to PostHog when enabled by the
           build configuration. This audit has not confirmed whether that
           conditional analytics path was enabled in a distributed beta.
-          Build 11 does not include that SDK analytics path, advertising
+          Build 14 does not include that SDK analytics path, advertising
           identifiers or a third-party crash/session analytics SDK. Apple may
           collect platform diagnostics under your Apple privacy settings.
         </p>
@@ -263,7 +271,7 @@
         <p>
           Apple device backups may include app data, depending on your settings.
           That is a platform backup, separate from an app-managed cloud sync or
-          build 11’s local recovery backup. See
+          build 14’s local recovery backup. See
           <a href="https://support.apple.com/en-us/108770"
             >Apple’s backup information</a
           >.
@@ -272,7 +280,7 @@
           Earlier Expo versions provide a partial JSON export containing
           identity, quests and daily logs; it is not a complete backup of all
           collections. The earlier native beta already includes journey export
-          during full access. Build 11 provides complete
+          during full access. Build 14 provides complete
           JSON export, including saved guided-reset progress, reflections and
           applied-plan links, the rest of the journal and an embedded avatar when
           present. These journal records are also included in local recovery
@@ -293,7 +301,7 @@
         <p>
           <strong>Earlier Expo history:</strong> the free-tier retention logic
           can permanently remove daily logs older than its history window. Do
-          not rely on build 11’s saved-history behavior for an earlier
+          not rely on build 14’s saved-history behavior for an earlier
           installed Expo version, or assume it can recover entries already
           deleted.
         </p>
@@ -302,7 +310,7 @@
           window limits visibility while retaining older saved entries.
         </p>
         <p>
-          <strong>Build 11 history:</strong> lifetime access includes the
+          <strong>Build 14 history:</strong> lifetime access includes the
           full saved history, with no free-tier visibility window. The migration
           reads the legacy journal and retains the original for recovery until
           Reset all data. An unreadable journal is preserved for
@@ -310,13 +318,13 @@
           validation remains a release check.
         </p>
         <p>
-          Build 11 preserves open editor drafts in memory during journal
+          Build 14 preserves open editor drafts in memory during journal
           recovery so you can explicitly retry saving after recovery succeeds.
           An unsaved draft is not a saved journal entry; this is not a promise
           that a draft survives force-quitting, a crash or device restart.
         </p>
         <p>
-          In build 11, Reset all data removes the local journey, including guided-reset responses, reviews and applied-plan
+          In build 14, Reset all data removes the local journey, including guided-reset responses, reviews and applied-plan
           records, plus app-owned recovery copies, backups, avatars and local
           export files. It keeps purchase ownership and historical preview/usage
           records. Removing a displayed avatar can leave older app-owned image
